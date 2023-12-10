@@ -35,7 +35,7 @@ public class Trebuchet {
                 }
             }
         }
-        System.out.println(sum + temp);
+        //System.out.println(sum + temp); //for debugging
         return sum + temp;
     }
 
@@ -69,7 +69,7 @@ public class Trebuchet {
         if (line.contains("nine")) {
             line = line.replaceAll("nine","nine9nine");
         }
-        //System.out.print(line + " - "); for debugging
+        //System.out.print(line + " - "); //for debugging
         return line;
     }
 }
