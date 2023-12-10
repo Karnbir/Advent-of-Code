@@ -41,7 +41,7 @@ public class Trebuchet {
 
     public static String StringPrep (String line) {
 
-        //insert numbers into string instead replacing to prevent  overriding other numbers
+        //insert numbers into string instead replacing to prevent the overriding of other numbers
         if (line.contains("one")) {
             line = line.replaceAll("one","one1one");
         }
