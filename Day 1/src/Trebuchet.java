@@ -35,6 +35,7 @@ public class Trebuchet {
                 }
             }
         }
+        System.out.println(sum + temp);
         return sum + temp;
     }
 
@@ -42,33 +43,33 @@ public class Trebuchet {
 
         //this order is specific to avoid overriding numbers
         if (line.contains("one")) {
-            line = line.replaceFirst("one","one1one");
+            line = line.replaceAll("one","one1one");
         }
         if (line.contains("two")) {
-            line = line.replaceFirst("two", "two2two");
+            line = line.replaceAll("two", "two2two");
         }
         if (line.contains("three")) {
-            line = line.replaceFirst("three","three3three");
+            line = line.replaceAll("three","three3three");
         }
         if (line.contains("four")) {
-            line = line.replaceFirst("four", "four4four");
+            line = line.replaceAll("four", "four4four");
         }
         if (line.contains("five")) {
-            line = line.replaceFirst("five","five5five");
+            line = line.replaceAll("five","five5five");
         }
         if (line.contains("six")) {
-            line = line.replaceFirst("six", "six6six");
+            line = line.replaceAll("six", "six6six");
         }
         if (line.contains("seven")) {
-            line = line.replaceFirst ("seven", "seven7seven");
+            line = line.replaceAll ("seven", "seven7seven");
         }
         if (line.contains("eight")) {
-            line = line.replaceFirst("eight", "eight8eight");
+            line = line.replaceAll("eight", "eight8eight");
         }
         if (line.contains("nine")) {
-            line = line.replaceFirst("nine","nine9nine");
+            line = line.replaceAll("nine","nine9nine");
         }
-
+        System.out.print(line + " - ");
         return line;
     }
 }
