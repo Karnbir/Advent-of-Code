@@ -25,7 +25,7 @@ public class Trebuchet {
         //go through string and find numbers
         for (int i = 0; i < line.length(); i++) {
 
-            if (line.charAt(i) >= '0' && line.charAt(i) <= '9') { //remove after finished stringprep
+            if (line.charAt(i) >= '0' && line.charAt(i) <= '9') {
 
                 temp = line.charAt(i) - '0';
 
@@ -41,7 +41,7 @@ public class Trebuchet {
 
     public static String StringPrep (String line) {
 
-        //this order is specific to avoid overriding numbers
+        //insert numbers into string instead replacing to prevent  overriding other numbers
         if (line.contains("one")) {
             line = line.replaceAll("one","one1one");
         }
@@ -69,7 +69,7 @@ public class Trebuchet {
         if (line.contains("nine")) {
             line = line.replaceAll("nine","nine9nine");
         }
-        System.out.print(line + " - ");
+        //System.out.print(line + " - "); for debugging
         return line;
     }
 }
